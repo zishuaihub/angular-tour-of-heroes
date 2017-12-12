@@ -11,7 +11,7 @@ import {Hero} from '../hero';
 })
 export class HeroesComponent implements OnInit {
   title = 'Tour of Heroes';
-  heroes: Hero[];
+  heroes;
   selectedHero: Hero;
   constructor(private heroService: HeroService, private router: Router) {
 
@@ -26,6 +26,20 @@ export class HeroesComponent implements OnInit {
   }
   gotoDetail(hero) {
     this.router.navigate(['/detail', hero.id]);
+  }
+  add(name) {
+    name = name.trim();
+    if (name) {
+      this.heroService.create(name).then(res => (alert('已添加')));
+    }else {
+      return;
+    }
+  }
+  delete(hero) {
+    event.stopPropagation();
+    this.heroService.delete(hero).then(
+      () => this.heroes = this.heroes.filter(h => h !== hero));
+      if (this.selectedHero === hero) { this.selectedHero = null; }
   }
 
 }

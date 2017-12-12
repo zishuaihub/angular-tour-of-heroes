@@ -12,7 +12,7 @@ import {HeroService} from '../hero.service';
   styleUrls: ['./hero-detail.component.css']
 })
 export class HeroDetailComponent implements OnInit {
-  hero: Hero;
+  hero;
   constructor(
     private heroService: HeroService,
     private route: ActivatedRoute,
@@ -20,13 +20,14 @@ export class HeroDetailComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.route.paramMap
-      .switchMap((params: ParamMap) => this.heroService.getHero(+params.get('id')))
-      .subscribe(hero => this.hero = hero);
+     this.route.paramMap
+       .switchMap((params: ParamMap) => this.heroService.getHero(+params.get('id')))
+       .subscribe(hero => this.hero = hero);
 }
+  update(hero) {
+    this.heroService.put(hero).then( res => alert('修改成功') );
+  }
   goBack(): void {
     this.location.back();
   }
-
-
 }

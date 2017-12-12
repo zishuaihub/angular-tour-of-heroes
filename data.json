@@ -1,15 +1,88 @@
 {
-    "heroes": [
-        { "id": 11, "name": "Mr. Nice" },
-        { "id": 12, "name": "Narco" },
-        { "id": 13, "name": "Bombasto" },
-        { "id": 14, "name": "Celeritas" },
-        { "id": 15, "name": "Magneta" },
-        { "id": 16, "name": "RubberMan" },
-        { "id": 17, "name": "Dynama" },
-        { "id": 18, "name": "Dr IQ" },
-        { "id": 19, "name": "Magma" },
-        { "id": 20, "name": "Tornado" }
-    ]
-
+  "heroes": [
+    {
+      "id": 12,
+      "name": "Genji"
+    },
+    {
+      "name": "Mccree",
+      "id": 22
+    },
+    {
+      "name": "Pharah",
+      "id": 23
+    },
+    {
+      "name": "Reaper",
+      "id": 24
+    },
+    {
+      "name": "Soldier:76",
+      "id": 25
+    },
+    {
+      "name": "Tracer",
+      "id": 26
+    },
+    {
+      "name": "Hanzo",
+      "id": 27
+    },
+    {
+      "name": "Junkrat",
+      "id": 28
+    },
+    {
+      "name": "Mei",
+      "id": 29
+    },
+    {
+      "name": "Torbjorn",
+      "id": 30
+    },
+    {
+      "name": "WidowMaker",
+      "id": 31
+    },
+    {
+      "name": "D.VA",
+      "id": 32
+    },
+    {
+      "name": "Roadhog",
+      "id": 33
+    },
+    {
+      "name": "Winston",
+      "id": 34
+    },
+    {
+      "name": "Zarya",
+      "id": 35
+    },
+    {
+      "name": "Lucio",
+      "id": 36
+    },
+    {
+      "name": "Mercy",
+      "id": 37
+    },
+    {
+      "name": "Symetra",
+      "id": 38
+    },
+    {
+      "name": "Bastion",
+      "id": 39
+    },
+    {
+      "name": "Reinhardt",
+      "id": 40
+    },
+    {
+      "name": "Zenyatta",
+      "id": 41
+    }
+  ]
 }

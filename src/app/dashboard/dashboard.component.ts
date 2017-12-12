@@ -8,12 +8,12 @@ import {Hero} from '../hero';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  heroes: Hero[];
+
+  heroes;
   constructor(private heroService: HeroService) { }
 
   ngOnInit() {
     this.heroService.getHeroes().then(
-      res => this.heroes = res.slice(1, 5)
-    );
+      res => { this.heroes = res; console.log(res); } );
   }
 }
